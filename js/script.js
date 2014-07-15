@@ -18,7 +18,7 @@ function capturePhoto(){
 function uploadPhoto(data){
 // this is where you would send the image file to server
 
-    document.getElementById('cameraPic').setAttribute('src', 'data:image/jpeg;base64,' + data);
+    document.getElementById('cameraPic').setAttribute('src', data);
 	//cameraPic.src = "data:image/jpeg;base64," + data;
 	// Successful upload to the server
 

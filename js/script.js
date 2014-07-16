@@ -1,17 +1,3 @@
-function showName() {
-    var checkedValue = "";
-    var radios = document.getElementsByName("choice");
-    for (i = 0; i < radios.length; i++) {
-        if (radios[i].checked) {
-            checkedValue = i+1;
-        }
-    }
-    
-    var nameInput = document.getElementById("nameInput");
-    alert(nameInput.value + " " + checkedValue);
-    document.getElementById('enhanceImageButton').setAttribute('style', 'display:inline-block;');
-}
-
 function capturePhoto(){
     navigator.camera.getPicture(uploadPhoto,null,{sourceType:1,quality:60});
 }
@@ -23,6 +9,6 @@ function uploadPhoto(data){
 	//cameraPic.src = "data:image/jpeg;base64," + data;
 	// Successful upload to the server
 
-    alert("got it " + data);
+    //alert("got it " + data);
     document.getElementById('enhanceImageButton').setAttribute('style', 'display:inline-block;');
 }

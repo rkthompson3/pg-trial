@@ -9,6 +9,7 @@ function showName() {
     
     var nameInput = document.getElementById("nameInput");
     alert(nameInput.value + " " + checkedValue);
+    document.getElementById('enhanceImageButton').setAttribute('style', 'display:inline-block;');
 }
 
 function capturePhoto(){
@@ -23,5 +24,5 @@ function uploadPhoto(data){
 	// Successful upload to the server
 
     alert("got it " + data);
-
+    document.getElementById('enhanceImageButton').setAttribute('style', 'display:inline-block;');
 }
